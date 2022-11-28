@@ -17,10 +17,18 @@ npx sequelize-cli db:migrate
 ```
 
 4) Seeders:
+Running all seeders
 ``` bash
 npx sequelize-cli db:seed:all
 ```
-
+Populate with users only:
+``` bash
+npm run db:seed:standard-users
+```
+Or:
+``` bash
+npm run db:seed:admin-users
+```
 ## Start local server
 
 ``` bash

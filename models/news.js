@@ -15,7 +15,12 @@ module.exports = (sequelize, DataTypes) => {
     {
       name: DataTypes.STRING,
       content: DataTypes.STRING,
-      image: DataTypes.STRING,
+      image: {
+        type: DataTypes.BLOB("long"),
+        get() {
+          return this.getDataValue("image").toString("utf8");
+        }
+      },
       categoryId: DataTypes.STRING,
       type: DataTypes.STRING,
     },

@@ -1,0 +1,116 @@
+"use strict";
+
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkInsert(
+      "Users",
+      [
+        {
+          roleId: 2,
+          firstName: "Christina",
+          lastName: "Cleyne",
+          email: "ccleyne0@bravesites.com",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2022-08-01T05:43:01Z"),
+          updatedAt: new Date("2021-12-22T04:48:44Z"),
+        },
+        {
+          roleId: 2,
+          firstName: "Sig",
+          lastName: "Bazley",
+          email: "sbazley1@epa.gov",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2022-05-07T14:12:13Z"),
+          updatedAt: new Date("2022-05-02T04:07:30Z"),
+        },
+        {
+          roleId: 2,
+          firstName: "Alfi",
+          lastName: "Papen",
+          email: "apapen2@studiopress.com",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2022-04-30T02:06:24Z"),
+          updatedAt: new Date("2022-05-28T14:34:07Z"),
+        },
+        {
+          roleId: 2,
+          firstName: "Inger",
+          lastName: "Fetteplace",
+          email: "ifetteplace3@opera.com",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2022-05-25T05:22:17Z"),
+          updatedAt: new Date("2022-01-21T08:59:14Z"),
+        },
+        {
+          roleId: 2,
+          firstName: "Al",
+          lastName: "Cammell",
+          email: "acammell4@nydailynews.com",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2021-09-22T22:48:04Z"),
+          updatedAt: new Date("2022-08-18T13:54:25Z"),
+        },
+        {
+          roleId: 2,
+          firstName: "Kennie",
+          lastName: "Clutterham",
+          email: "kclutterham5@theguardian.com",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2021-12-10T05:17:59Z"),
+          updatedAt: new Date("2022-01-15T01:32:05Z"),
+        },
+        {
+          roleId: 2,
+          firstName: "Hanni",
+          lastName: "Clarage",
+          email: "hclarage6@utexas.edu",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2022-02-03T05:43:52Z"),
+          updatedAt: new Date("2022-09-06T12:53:01Z"),
+        },
+        {
+          roleId: 2,
+          firstName: "Julio",
+          lastName: "Covendon",
+          email: "jcovendon7@discovery.com",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2022-08-10T16:18:21Z"),
+          updatedAt: new Date("2022-01-09T00:18:38Z"),
+        },
+        {
+          roleId: 2,
+          firstName: "Sam",
+          lastName: "MacMichael",
+          email: "smacmichael8@bloomberg.com",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2022-06-15T02:54:56Z"),
+          updatedAt: new Date("2022-07-07T00:19:32Z"),
+        },
+        {
+          roleId: 2,
+          firstName: "Marla",
+          lastName: "Samuels",
+          email: "msamuels9@tiny.cc",
+          password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+          image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+          createdAt: new Date("2022-05-23T23:48:07Z"),
+          updatedAt: new Date("2022-01-11T05:30:41Z"),
+        },
+      ],
+      {}
+    );
+  },
+
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.dropTable('Users'); // Can't get bulkdelete to work
+  },
+};

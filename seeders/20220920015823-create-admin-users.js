@@ -1,0 +1,112 @@
+'use strict';
+
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkInsert('Users', 
+    [{
+      roleId: 1,
+      firstName: "Adah",
+      lastName: "Lownie",
+      email: "alownie0@zdnet.com",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/ff4444/ffffff",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+          updatedAt: new Date("2022-05-02T04:07:30Z"),
+    },
+    {
+      roleId: 1,
+      firstName: "Carolus",
+      lastName: "Stitwell",
+      email: "cstitwell1@dropbox.com",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+          updatedAt: new Date("2022-05-02T04:07:30Z"),
+    },
+    {
+      roleId: 1,
+      firstName: "Evania",
+      lastName: "Littlejohns",
+      email: "elittlejohns2@edublogs.org",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/dddddd/000000",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+          updatedAt: new Date("2022-05-02T04:07:30Z"),
+    },
+    {
+      roleId: 1,
+      firstName: "Damara",
+      lastName: "Howler",
+      email: "dhowler3@sogou.com",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+          updatedAt: new Date("2022-05-02T04:07:30Z"),
+    },
+    {
+      roleId: 1,
+      firstName: "Tibold",
+      lastName: "Hutchence",
+      email: "thutchence4@nih.gov",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/ff4444/ffffff",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+      updatedAt: new Date("2022-05-02T04:07:30Z"),
+    },
+    {
+      roleId: 1,
+      firstName: "Thia",
+      lastName: "Belleny",
+      email: "tbelleny5@mit.edu",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/ff4444/ffffff",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+          updatedAt: new Date("2022-05-02T04:07:30Z"),
+    },
+    {
+      roleId: 1,
+      firstName: "Otho",
+      lastName: "Piggens",
+      email: "opiggens6@delicious.com",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+          updatedAt: new Date("2022-05-02T04:07:30Z"),
+    },
+    {
+      roleId: 1,
+      firstName: "Beauregard",
+      lastName: "Whiley",
+      email: "bwhiley7@skype.com",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/dddddd/000000",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+          updatedAt: new Date("2022-05-02T04:07:30Z"),
+    },
+    {
+      roleId: 1,
+      firstName: "Briggs",
+      lastName: "Aimer",
+      email: "baimer8@indiatimes.com",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/cc0000/ffffff",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+      updatedAt: new Date("2022-05-02T04:07:30Z"),
+    },
+    {
+      roleId: 1,
+      firstName: "Jeanna",
+      lastName: "Abbess",
+      email: "jabbess9@seesaa.net",
+      password: "$2b$10$myNQ7zjpuoiiVEGnNAIKzu16Y.jzD0r47U3YDXDCCrXN9oh.KWd4O",
+      image: "http://dummyimage.com/100x100.png/dddddd/000000",
+      createdAt: new Date("2022-05-07T14:12:13Z"),
+          updatedAt: new Date("2022-05-02T04:07:30Z"),
+    }], {}
+    )
+  },
+
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.dropTable('Users'); // Can't get bulkdelete to work
+  }
+};
