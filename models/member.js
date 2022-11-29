@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     rol: DataTypes.STRING,
-    description: DataTypes.STRING(750),
+    description: DataTypes.STRING(2048),
   }, {
     sequelize,
     modelName: 'Member',
