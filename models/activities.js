@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
         return this.getDataValue("image").toString("utf8");
       }
     },
-    content: DataTypes.STRING,
+    content: DataTypes.TEXT,
     deletedAt: DataTypes.DATE
   }, {
     sequelize,
